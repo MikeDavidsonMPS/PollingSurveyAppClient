@@ -1,6 +1,6 @@
 import React, {useEffect,useState} from "react";
 // import "./App.css";
-
+import CreatePoll from "./01-components/polls/admin/CreatePoll";
 
 
 
@@ -8,7 +8,7 @@ function App () {
   return (
     <main className = "container text-center">
       <div>
-        <h1>This is the App.js file where the switch will go.</h1>
+        <CreatePoll/>
       </div>
     
     </main>
