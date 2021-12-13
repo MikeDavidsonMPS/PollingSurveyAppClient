@@ -1,6 +1,8 @@
-import {Component} from 'react'
+import {Component} from React
 
-export default class UserHome extends Component{
+export default class UserProfile extends Component{
+
+    
     render(){
         return(
             <div>

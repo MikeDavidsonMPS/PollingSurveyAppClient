@@ -1,4 +1,5 @@
 import {Component} from "react"
+import APIURL from "../../../helpers/environment"
 
 export default class CreatePoll extends Component{
     constructor(){
@@ -17,7 +18,24 @@ export default class CreatePoll extends Component{
     }
 
     fetchCreatePoll(){
-        //POST request for creating a poll
+        fetch(`${APIURL}/Survey`,{
+            method: 'POST',
+            body: JSON.stringify({
+                /////////////////////////////this is where the inputs go but I need to know what exactly they're named in order to properly set it up
+                // title :  this.state.title       ,
+                // question :  this.state.question       ,
+                // : this.state.input0 ,
+                // : this.state.input1 ,
+                // : this.state.input2 ,
+                // : this.state.input3 ,
+                // : this.state.input4 ,
+                // : this.state.input5 ,
+
+            })
+            // headers?????
+        })
+        .then( response => response.json())
+        .catch(err => console.log('There is an error in the create poll fetch, it is:', err))
     }
 
     changeHandlerTitle(event){
