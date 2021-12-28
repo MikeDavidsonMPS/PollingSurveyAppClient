@@ -1,0 +1,46 @@
+body {
+    display: grid;
+  
+    grid-template-rows: auto;
+    grid-row-start: 2;
+    
+}
+input{
+    width: 95%;
+}
+
+
+.main {
+    grid-column-start:2;
+    background-color: blueviolet;
+    /* z-index: 99 */
+}
+
+#createPoll {
+    grid-row: span auto;
+}
+
+.title {
+    margin: 20px 5px 5px 5px;
+    border: 1px solid black;
+    /* width: 100%; */
+}
+
+.question {
+    margin: 20px 5px 5px 5px;
+    /* width: 100%; */
+}
+.answers {
+    margin: 5px 5px 5px 5px;
+    /* width: 100%; */
+}
+.addChoice{
+    margin: 5px 90% 5px 5px;
+}
+
+.removeChoice{
+    margin:5px 90% 5px 5px;
+}
+.submit{
+    margin:5px 90% 5px 5px;
+}

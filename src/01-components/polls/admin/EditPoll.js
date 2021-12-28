@@ -81,22 +81,22 @@ export default class EditPoll extends Component{
                     <input placeholder="title" type="text" value={this.state.title} onChange={(e)=> this.changeHandlerTitle(e)} />
                     <input placeholder="question" type="text" value={this.state.question} onChange={(e)=> this.changeHandlerQuestion(e)}/>
                     {
-                        this.state.numberOfAnswers > 0 ?   <input placeholder="one" type="text" value={this.state.input0} onChange={(e)=> this.changeHandlerInput0}/>: null
+                        this.state.numberOfAnswers > 0 ?   <input placeholder="one" type="text" value={this.state.input0} onChange={(e)=> this.changeHandlerInput0(e)}/>: null
                     }
                     {
-                        this.state.numberOfAnswers > 1 ?<input placeholder='two' type="text" value={this.state.input1} onChange={(e)=> this.changeHandlerInput1}/>: null
+                        this.state.numberOfAnswers > 1 ?<input placeholder='two' type="text" value={this.state.input1} onChange={(e)=> this.changeHandlerInput1(e)}/>: null
                     }
                     {
-                        this.state.numberOfAnswers > 2 ? <input placeholder='three' type="text" value={this.state.input2} onChange={(e)=> this.changeHandlerInput2}/>: null
+                        this.state.numberOfAnswers > 2 ? <input placeholder='three' type="text" value={this.state.input2} onChange={(e)=> this.changeHandlerInput2(e)}/>: null
                     }
                     {
-                        this.state.numberOfAnswers > 3 ? <input placeholder='four' type="text" value={this.state.input3}onChange={(e)=> this.changeHandlerInput3}/> :null
+                        this.state.numberOfAnswers > 3 ? <input placeholder='four' type="text" value={this.state.input3}onChange={(e)=> this.changeHandlerInput3(e)}/> :null
                     }
                     {
-                        this.state.numberOfAnswers > 4 ? <input placeholder="five" type="text" value={this.state.input4} onChange={(e)=> this.changeHandlerInput4}/>: null
+                        this.state.numberOfAnswers > 4 ? <input placeholder="five" type="text" value={this.state.input4} onChange={(e)=> this.changeHandlerInput4(e)}/>: null
                     }
                     {
-                        this.state.numberOfAnswers > 5 ? <input placeholder="six" type="text" value={this.state.input5} onChange={(e)=> this.changeHandlerInput5}/>: null
+                        this.state.numberOfAnswers > 5 ? <input placeholder="six" type="text" value={this.state.input5} onChange={(e)=> this.changeHandlerInput5(e)}/>: null
                     }
 
                     {/* <button type="button" onClick={this.addChoice}>Add a Choice</button> */}
